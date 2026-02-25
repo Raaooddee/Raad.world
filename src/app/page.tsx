@@ -91,16 +91,16 @@ export default function Home() {
               Experience
             </a>
             <a
-              href="#education"
-              className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
-            >
-              Education
-            </a>
-            <a
               href="#projects"
               className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
             >
               Projects
+            </a>
+            <a
+              href="#education"
+              className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
+            >
+              Education
             </a>
             <a
               href="/resume.pdf"
@@ -185,6 +185,22 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="projects" className="scroll-mt-20 mb-24">
+          <div className="mb-10">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
+              Build
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold text-[var(--text)] sm:text-3xl">
+              Projects
+            </h2>
+          </div>
+          <div className="space-y-8">
+            {projects.map((p) => (
+              <ProjectCard key={p.id} p={p} />
+            ))}
+          </div>
+        </section>
+
         <section id="education" className="scroll-mt-20 mb-24">
           <div className="mb-10">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
@@ -242,22 +258,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section id="projects" className="scroll-mt-20">
-          <div className="mb-10">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
-              Build
-            </p>
-            <h2 className="mt-2 text-2xl font-semibold text-[var(--text)] sm:text-3xl">
-              Projects
-            </h2>
-          </div>
-          <div className="space-y-8">
-            {projects.map((p) => (
-              <ProjectCard key={p.id} p={p} />
-            ))}
           </div>
         </section>
 
