@@ -20,7 +20,7 @@ export const experience: ExperienceEntry[] = [
     title: "IT Support Assistant (Institute on Aging)",
     org: "UW School of Medicine and Public Health",
     location: "Madison, WI",
-    period: "February 2026 – Present · Part-time",
+    period: "February 2026 – Present",
     bullets: [
       "Support researchers and staff at the UW–Madison Institute on Aging (SMPH) by triaging and troubleshooting Windows/macOS issues across computers and peripherals, and documenting resolutions.",
       "Contribute to ongoing website accessibility and UX improvements using web best practices (semantic HTML, alt text, metadata) and performance-minded updates.",

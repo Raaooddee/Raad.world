@@ -14,25 +14,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "goodneighbor",
-    title: "GoodNeighbor",
-    tagline: "Charity Directory",
-    period: "Nov 2025",
-    role: "Founder",
-    description:
-      "GoodNeighbor is a charity directory built to make donating simpler, safer, and more transparent. When people want to help, the hardest part shouldn't be figuring out where to donate or worrying whether a link is legitimate. This site lets you discover charities by cause and location, read a clear description, and donate directly on the charity's official website.",
-    highlights: [
-      "Filter charities by category + country",
-      "Open the charity's official donation page (we don't process donations)",
-      "Provide descriptions and key details so people can make informed choices",
-    ],
-    whatItIsNot:
-      "GoodNeighbor never takes a cut and doesn't handle payments — it's strictly a directory that links you to the right place.",
-    links: [{ label: "Live site", href: "https://goodneighbor.charity" }],
-    skills: ["Next.js", "React.js", "TypeScript", "Web Development"],
-    imagePlaceholder: "🌿",
-  },
-  {
     id: "smarttransit",
     title: "SmartTransit",
     tagline: "Reliability-First Transit Planner",
@@ -62,6 +43,25 @@ export const projects: Project[] = [
       "BusTime API",
     ],
     imagePlaceholder: "🚍",
+  },
+  {
+    id: "goodneighbor",
+    title: "GoodNeighbor",
+    tagline: "Charity Directory",
+    period: "Nov 2025",
+    role: "Founder",
+    description:
+      "GoodNeighbor is a charity directory built to make donating simpler, safer, and more transparent. When people want to help, the hardest part shouldn't be figuring out where to donate or worrying whether a link is legitimate. This site lets you discover charities by cause and location, read a clear description, and donate directly on the charity's official website.",
+    highlights: [
+      "Filter charities by category + country",
+      "Open the charity's official donation page (we don't process donations)",
+      "Provide descriptions and key details so people can make informed choices",
+    ],
+    whatItIsNot:
+      "GoodNeighbor never takes a cut and doesn't handle payments — it's strictly a directory that links you to the right place.",
+    links: [{ label: "Live site", href: "https://goodneighbor.charity" }],
+    skills: ["Next.js", "React.js", "TypeScript", "Web Development"],
+    imagePlaceholder: "🌿",
   },
   {
     id: "campus-navigator",
