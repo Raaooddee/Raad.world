@@ -6,7 +6,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 function ProjectCard({ p }: { p: Project }) {
   return (
-    <article className="card-hover overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-6 shadow-sm transition-all sm:p-8">
+    <article className="card-hover overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-5 shadow-sm transition-all sm:p-8">
       <div className="mb-6 flex flex-wrap items-start gap-5">
         <span
           className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-[var(--bg-elevated)] text-2xl sm:h-16 sm:w-16"
@@ -78,80 +78,65 @@ function ProjectCard({ p }: { p: Project }) {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-[var(--bg)]">
+    <div className="relative min-h-screen overflow-x-hidden bg-[var(--bg)]">
       <header className="sticky top-0 z-20 border-b border-[var(--border)] bg-[var(--bg-elevated)]/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
-          <a href="#" className="text-lg font-semibold text-[var(--text)]">
-            Raad AlShaikh Hasan
-          </a>
-          <div className="flex items-center gap-4">
-            <nav className="flex flex-wrap items-center gap-6 text-sm">
-            <a
-              href="#experience"
-              className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
-            >
-              Experience
+        <div className="mx-auto max-w-4xl px-4 py-3 sm:px-8 sm:py-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <a href="#" className="shrink-0 text-base font-semibold text-[var(--text)] sm:text-lg">
+              Raad AlShaikh Hasan
             </a>
-            <a
-              href="#projects"
-              className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
-            >
-              Projects
-            </a>
-            <a
-              href="#education"
-              className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
-            >
-              Education
-            </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
-            >
-              Resume
-            </a>
-            <a
-              href="#contact"
-              className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
-            >
-              Contact
-            </a>
-          </nav>
-            <ThemeToggle />
+            <div className="flex items-center gap-3 sm:gap-4">
+              <nav className="flex flex-wrap items-center justify-end gap-3 text-xs sm:gap-6 sm:text-sm">
+                <a href="#experience" className="whitespace-nowrap text-[var(--text-muted)] transition-colors hover:text-[var(--text)]">
+                  Experience
+                </a>
+                <a href="#projects" className="whitespace-nowrap text-[var(--text-muted)] transition-colors hover:text-[var(--text)]">
+                  Projects
+                </a>
+                <a href="#education" className="whitespace-nowrap text-[var(--text-muted)] transition-colors hover:text-[var(--text)]">
+                  Education
+                </a>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="whitespace-nowrap text-[var(--text-muted)] transition-colors hover:text-[var(--text)]">
+                  Resume
+                </a>
+                <a href="#contact" className="whitespace-nowrap text-[var(--text-muted)] transition-colors hover:text-[var(--text)]">
+                  Contact
+                </a>
+              </nav>
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       </header>
 
-      <main className="relative z-10 mx-auto max-w-4xl px-5 py-16 sm:px-8 sm:py-24">
-        <section className="mb-24 flex flex-col gap-10 sm:flex-row sm:items-center sm:gap-14">
-          <div className="shrink-0">
+      <main className="relative z-10 mx-auto max-w-4xl px-4 py-12 sm:px-8 sm:py-24">
+        <section className="mb-16 flex flex-col items-center gap-8 sm:mb-24 sm:flex-row sm:gap-14 sm:items-center">
+          <div className="shrink-0 sm:flex-none">
             <div className="overflow-hidden rounded-xl border border-[var(--border)]">
               <Image
                 src="/raad.png"
                 alt="Raad AlShaikh Hasan"
                 width={200}
                 height={200}
-                className="h-44 w-44 object-cover sm:h-52 sm:w-52"
+                className="h-32 w-32 object-cover sm:h-52 sm:w-52"
                 priority
               />
             </div>
           </div>
-          <div>
-            <h1 className="text-3xl font-bold tracking-tight text-[var(--text)] sm:text-4xl lg:text-5xl">
+          <div className="min-w-0 w-full text-center sm:text-left">
+            <h1 className="text-2xl font-bold tracking-tight text-[var(--text)] sm:text-4xl lg:text-5xl">
               Raad AlShaikh Hasan
             </h1>
             <p className="mt-2 text-sm text-[var(--text-muted)]">
               Madison, WI
             </p>
-            <p className="mt-5 max-w-xl text-[var(--text-muted)] leading-relaxed">
+            <p className="mt-4 max-w-xl text-sm text-[var(--text-muted)] leading-relaxed sm:mt-5 sm:text-base">
               Hi, I&apos;m Raad. This page is a bit of my story so far: where I study, what I&apos;ve done, and some things I&apos;ve worked on. Glad you&apos;re here.
             </p>
           </div>
         </section>
 
-        <section id="experience" className="scroll-mt-20 mb-24">
+        <section id="experience" className="scroll-mt-20 mb-16 sm:mb-24">
           <div className="mb-10">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
               Work
@@ -167,8 +152,8 @@ export default function Home() {
                 className="card-hover rounded-xl border border-[var(--border)] bg-[var(--bg-card)] p-6 shadow-sm sm:p-8"
               >
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <div>
-                    <h3 className="text-lg font-semibold text-[var(--text)]">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base font-semibold text-[var(--text)] sm:text-lg">
                       {job.title} · {job.org}
                     </h3>
                     <p className="mt-0.5 text-sm text-[var(--text-muted)]">
@@ -189,7 +174,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="scroll-mt-20 mb-24">
+        <section id="projects" className="scroll-mt-20 mb-16 sm:mb-24">
           <div className="mb-10">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
               Build
@@ -205,7 +190,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="education" className="scroll-mt-20 mb-24">
+        <section id="education" className="scroll-mt-20 mb-16 sm:mb-24">
           <div className="mb-10">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
               Background
@@ -240,7 +225,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="skills" className="scroll-mt-20 mb-24">
+        <section id="skills" className="scroll-mt-20 mb-16 sm:mb-24">
           <div className="mb-10">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent)]">
               Tools

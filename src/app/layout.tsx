@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "Comp Sci and Data Science student at UW–Madison. Projects: GoodNeighbor, SmartTransit, Campus Navigator.",
 };
 
+export const viewport = { width: "device-width", initialScale: 1 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
