@@ -2,6 +2,7 @@ import Image from "next/image";
 import { projects } from "@/data/projects";
 import type { Project } from "@/data/projects";
 import { experience, education, skills } from "@/data/resume";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 function ProjectCard({ p }: { p: Project }) {
   return (
@@ -79,11 +80,12 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-[var(--bg)]">
       <header className="sticky top-0 z-20 border-b border-[var(--border)] bg-[var(--bg-elevated)]/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-4xl items-center justify-between px-5 py-4 sm:px-8">
+        <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
           <a href="#" className="text-lg font-semibold text-[var(--text)]">
             Raad AlShaikh Hasan
           </a>
-          <nav className="flex flex-wrap items-center gap-6 text-sm">
+          <div className="flex items-center gap-4">
+            <nav className="flex flex-wrap items-center gap-6 text-sm">
             <a
               href="#experience"
               className="text-[var(--text-muted)] transition-colors hover:text-[var(--text)]"
@@ -117,6 +119,8 @@ export default function Home() {
               Contact
             </a>
           </nav>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -142,7 +146,7 @@ export default function Home() {
               Madison, WI
             </p>
             <p className="mt-5 max-w-xl text-[var(--text-muted)] leading-relaxed">
-              Computer Science and Data Science student with hands-on experience in web development, backend systems, and technical support. I build and ship production web apps, implement algorithms and APIs, and love solving real problems. Here are some of my projects.
+              Hi, I&apos;m Raad. This page is a bit of my story so far: where I study, what I&apos;ve done, and some things I&apos;ve worked on. Glad you&apos;re here.
             </p>
           </div>
         </section>

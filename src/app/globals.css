@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-:root {
+/* Light (default) */
+:root,
+[data-theme="light"] {
   --bg: #f8fafc;
   --bg-elevated: #ffffff;
   --bg-card: #ffffff;
@@ -10,6 +12,19 @@
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
   --accent-soft: rgba(37, 99, 235, 0.08);
+}
+
+/* Dark */
+[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --bg-elevated: #141414;
+  --bg-card: #171717;
+  --border: #262626;
+  --text: #fafafa;
+  --text-muted: #a3a3a3;
+  --accent: #d4d4d4;
+  --accent-hover: #e5e5e5;
+  --accent-soft: rgba(255, 255, 255, 0.06);
 }
 
 @theme inline {
@@ -22,14 +37,19 @@
 body {
   background: var(--bg);
   color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .card-hover {
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
-.card-hover:hover {
+[data-theme="light"] .card-hover:hover {
   box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.06);
   border-color: #cbd5e1;
+}
+[data-theme="dark"] .card-hover:hover {
+  box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.4);
+  border-color: #404040;
 }
 
 a:focus-visible,
