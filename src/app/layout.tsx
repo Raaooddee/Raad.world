@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Outfit, JetBrains_Mono } from "next/font/google";
+import { Outfit, JetBrains_Mono, Dancing_Script } from "next/font/google";
 import "./globals.css";
+import { SignatureLoading } from "@/components/SignatureLoading";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -13,6 +14,12 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
   display: "swap",
+});
+
+const dancingScript = Dancing_Script({
+  variable: "--font-signature",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -38,8 +45,9 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${outfit.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+        className={`${outfit.variable} ${jetbrainsMono.variable} ${dancingScript.variable} font-sans antialiased`}
       >
+        <SignatureLoading />
         {children}
       </body>
     </html>
