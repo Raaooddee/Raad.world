@@ -425,6 +425,23 @@ export default function Home() {
                           ))}
                         </div>
                       )}
+                      {edu.activities && edu.activities.length > 0 && (
+                        <div className="mt-4">
+                          <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--text-subtle)]">
+                            Activities &amp; Societies
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {edu.activities.map((a, i) => (
+                              <span
+                                key={i}
+                                className="rounded-full border border-[var(--border)] bg-[var(--bg-elevated)] px-3 py-1 text-xs font-medium text-[var(--text-muted)]"
+                              >
+                                {a}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

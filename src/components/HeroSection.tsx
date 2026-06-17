@@ -144,9 +144,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 1.15, ease }}
               className="mt-4 text-sm leading-relaxed text-[var(--text-subtle)] sm:text-base"
             >
-              CS &amp; Data Science @ UW&#8209;Madison
-              <br />
-              Originally from Amman, Jordan
+              CS, Data Science &amp; Math @ UW&#8209;Madison
             </motion.p>
 
             {/* CTAs */}

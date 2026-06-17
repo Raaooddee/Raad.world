@@ -108,15 +108,15 @@ button:focus-visible {
 .aurora-3 { animation: aurora-drift-2 28s ease-in-out infinite 8s; }
 .aurora-4 { animation: aurora-drift-1 22s ease-in-out infinite 5s; }
 
-/* Floating particles */
-@keyframes particle-float {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(30px, -40px); }
-  50% { transform: translate(-20px, 20px); }
-  75% { transform: translate(25px, 30px); }
+/* Floating code fragments */
+@keyframes code-drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(20px, -30px) rotate(2deg); }
+  50% { transform: translate(-15px, 15px) rotate(-1deg); }
+  75% { transform: translate(25px, 20px) rotate(1deg); }
 }
-.particle {
-  animation-name: particle-float;
+.code-float {
+  animation-name: code-drift;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   will-change: transform;

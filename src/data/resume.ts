@@ -14,6 +14,7 @@ export interface EducationEntry {
   location?: string;
   period: string;
   highlights?: string[];
+  activities?: string[];
   logo?: string;
 }
 
@@ -105,11 +106,17 @@ export const experience: ExperienceEntry[] = [
 
 export const education: EducationEntry[] = [
   {
-    degree: "B.S. Computer Science, B.S. Data Science",
+    degree: "B.S. Computer Science, B.S. Data Science, B.S. Mathematics",
     school: "University of Wisconsin–Madison",
-    detail: "Minor: Mathematics",
     period: "May 2028",
     highlights: ["3.6 GPA", "Dean's List: Fall 2025–2026"],
+    activities: [
+      "Data Science Club",
+      "Claude Builder Club",
+      "Kappa Eta Kappa",
+      "Alpha Lambda Mu",
+      "Arab Student Association",
+    ],
     logo: "/logos/wisc.png",
   },
   {
@@ -122,8 +129,8 @@ export const education: EducationEntry[] = [
 ];
 
 export const skills: Record<string, string[]> = {
-  "Programming": ["Python", "Java", "C++", "R"],
-  "Web": ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
-  "Technical": ["Data Structures", "Algorithms", "OOP", "APIs", "CLI", "Virtual Machines"],
-  "Professional": ["Technical Support", "Troubleshooting", "Documentation"],
+  "Programming": ["Python", "Java", "C", "C++", "R"],
+  "Web": ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"],
+  "AI / Data": ["PyTorch", "Pydantic", "Databricks", "Azure", "FastAPI", "REST APIs", "Docker", "Bruno"],
+  "Technical": ["Data Structures", "Algorithms", "OOP", "IT Troubleshooting"],
 };
