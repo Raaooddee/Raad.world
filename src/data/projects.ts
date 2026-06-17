@@ -10,6 +10,8 @@ export interface Project {
   links: { label: string; href: string }[];
   skills: string[];
   imagePlaceholder?: string;
+  image?: string;
+  video?: string;
 }
 
 export const projects: Project[] = [
@@ -43,6 +45,7 @@ export const projects: Project[] = [
       "BusTime API",
     ],
     imagePlaceholder: "🚍",
+    image: "/smarttransit-screenshot.png",
   },
   {
     id: "goodneighbor",
@@ -62,6 +65,7 @@ export const projects: Project[] = [
     links: [{ label: "Live site", href: "https://goodneighbor.charity" }],
     skills: ["Next.js", "React.js", "TypeScript", "Web Development"],
     imagePlaceholder: "🌿",
+    image: "/goodneighbor-screenshot.png",
   },
   {
     id: "campus-navigator",
@@ -86,5 +90,6 @@ export const projects: Project[] = [
     ],
     skills: ["Java", "Data Structures & Algorithms", "Graph Theory", "JUnit"],
     imagePlaceholder: "🗺️",
+    video: "https://mediaspace.wisc.edu/media/Kaltura+Capture+recording+-+July+15th+2025%2C+2%3A00%3A36+pm/1_7p8ao9w1",
   },
 ];

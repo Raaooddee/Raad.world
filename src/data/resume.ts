@@ -4,6 +4,7 @@ export interface ExperienceEntry {
   location: string;
   period: string;
   bullets: string[];
+  logo?: string;
 }
 
 export interface EducationEntry {
@@ -13,14 +14,28 @@ export interface EducationEntry {
   location?: string;
   period: string;
   highlights?: string[];
+  logo?: string;
 }
 
 export const experience: ExperienceEntry[] = [
+  {
+    title: "AI Engineering Intern",
+    org: "PwC",
+    location: "Amman, Jordan",
+    period: "May 2026 – Present",
+    logo: "/logos/pwc.png",
+    bullets: [
+      "Building an AI-driven digital platform for Qatar's Ministry of Commerce and Industry (MoCI) to support investor services.",
+      "Developing backend services and data pipelines using Python, Pydantic, FastAPI, and REST APIs; containerizing services with Docker.",
+      "Working across Databricks and Azure for data processing and model deployment, with PyTorch for model development and Bruno for API testing.",
+    ],
+  },
   {
     title: "IT Support Assistant (Institute on Aging)",
     org: "UW School of Medicine and Public Health",
     location: "Madison, WI",
     period: "February 2026 – Present",
+    logo: "/logos/wisc.png",
     bullets: [
       "Support researchers and staff at the UW–Madison Institute on Aging (SMPH) by triaging and troubleshooting Windows/macOS issues across computers and peripherals, and documenting resolutions.",
       "Contribute to ongoing website accessibility and UX improvements using web best practices (semantic HTML, alt text, metadata) and performance-minded updates.",
@@ -32,6 +47,7 @@ export const experience: ExperienceEntry[] = [
     org: "Dental Aid & Relief Association",
     location: "Portland, OR",
     period: "April 2025 – November 2025",
+    logo: "/logos/dental-aid.png",
     bullets: [
       "Designed and developed organizational website pages to improve UX and online presence.",
       "Optimized assets and code, reducing load time by 25% and increasing Lighthouse performance score from 75 to 90.",
@@ -44,6 +60,7 @@ export const experience: ExperienceEntry[] = [
     org: "The Stevie Awards",
     location: "Amman, Jordan",
     period: "December 2023 – February 2024",
+    logo: "/logos/stevie.png",
     bullets: [
       "Resolved 200+ client support tickets with 95%+ SLA compliance and 70–80% first-contact resolution.",
       "Troubleshot login, access, configuration, and submission issues for 30–50 active client accounts.",
@@ -54,7 +71,8 @@ export const experience: ExperienceEntry[] = [
     title: "Business Consultant",
     org: "NASA International Space Apps Challenge",
     location: "Amman, Jordan",
-    period: "October 2023 · 1 mo",
+    period: "October 2023",
+    logo: "/logos/nasa.png",
     bullets: [
       "Mentored teams through the global hackathon, advising on project scope, pitch structure, and technical feasibility.",
       "Provided business and product guidance to help participants refine solutions and present to judges.",
@@ -65,6 +83,7 @@ export const experience: ExperienceEntry[] = [
     org: "Autographics",
     location: "Amman, Jordan",
     period: "May 2023 – July 2023",
+    logo: "/logos/autographics.png",
     bullets: [
       "Developed and tested Python features using object-oriented programming to support internal workflows.",
       "Built and executed automated and manual test cases, improving reliability across frequent deployments.",
@@ -76,6 +95,7 @@ export const experience: ExperienceEntry[] = [
     org: "Eastnets",
     location: "Amman, Jordan",
     period: "August 2022 – September 2022",
+    logo: "/logos/eastnets.png",
     bullets: [
       "Assisted with Windows endpoint security checks, vulnerability scans, and access reviews.",
       "Documented findings and troubleshooting steps to standardize repeated security tasks.",
@@ -90,12 +110,14 @@ export const education: EducationEntry[] = [
     detail: "Minor: Mathematics",
     period: "May 2028",
     highlights: ["3.6 GPA", "Dean's List: Fall 2025–2026"],
+    logo: "/logos/wisc.png",
   },
   {
     degree: "High School Diploma",
     school: "Jubilee Institute",
     location: "Amman, Jordan",
     period: "June 2024",
+    logo: "/logos/Jubilee.png",
   },
 ];
 
