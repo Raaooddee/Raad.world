@@ -16,6 +16,33 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "pl-watch-party",
+    title: "PL Watch Party",
+    tagline: "Premier League Watch-Party Finder",
+    period: "2026",
+    role: "Personal Project",
+    description:
+      "A nationwide matchday finder that helps Premier League fans across the US find where to watch their club play. Instead of guessing which bar is showing a game, PL Watch Party maps live fixtures to nearby venues, auto-selects your closest city, and lets fans RSVP so they know who else will be there.",
+    highlights: [
+      "Nationwide full-stack matchday finder spanning US cities coast to coast, a full 380-fixture Premier League season, 400+ venues, and a 64-group supporters-club directory",
+      "Automated a full season of fixture syncing from football-data.org through a service-role API route, and ranked 400+ Google Places venues by popularity — removing all manual data entry",
+      "Anonymous real-time RSVP with live attendance counts over Supabase Realtime",
+      "Geolocation that auto-selects the nearest city and sorts venues by distance",
+    ],
+    links: [{ label: "Live site", href: "https://pl-watch-party.vercel.app" }],
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Google Maps/Places API",
+      "football-data.org",
+      "Node.js",
+    ],
+    imagePlaceholder: "⚽",
+  },
+  {
     id: "smarttransit",
     title: "SmartTransit",
     tagline: "Reliability-First Transit Planner",
