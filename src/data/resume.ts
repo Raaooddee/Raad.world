@@ -20,15 +20,15 @@ export interface EducationEntry {
 
 export const experience: ExperienceEntry[] = [
   {
-    title: "AI Engineering Intern",
-    org: "PwC",
+    title: "Artificial Intelligence Engineer Intern",
+    org: "PwC Middle East, Digital & Cyber",
     location: "Amman, Jordan",
-    period: "May 2026 – Present",
+    period: "May 2026 – July 2026",
     logo: "/logos/pwc.png",
     bullets: [
-      "Building an AI-driven digital platform for Qatar's Ministry of Commerce and Industry (MoCI) to support investor services.",
-      "Developing backend services and data pipelines using Python, Pydantic, FastAPI, and REST APIs; containerizing services with Docker.",
-      "Working across Databricks and Azure for data processing and model deployment, with PyTorch for model development and Bruno for API testing.",
+      "Shipped backend services for an AI-driven investor-services platform for Qatar's Ministry of Commerce and Industry (MoCI), owning 10+ FastAPI endpoints and 20+ Pydantic data models end to end.",
+      "Containerized services with Docker and built a 50+ request REST API test suite in Bruno, replacing manual endpoint checks and catching schema regressions pre-release.",
+      "Developed 3 PyTorch model and data pipelines across Databricks and Azure, owning preprocessing and evaluation runs behind the platform's AI features.",
     ],
   },
   {
@@ -109,7 +109,7 @@ export const education: EducationEntry[] = [
     degree: "B.S. Computer Science, B.S. Data Science, B.S. Mathematics",
     school: "University of Wisconsin–Madison",
     period: "May 2028",
-    highlights: ["3.6 GPA", "Dean's List: Fall 2025–2026"],
+    highlights: ["3.5 GPA", "Dean's List: Fall 2025–2026"],
     activities: [
       "Data Science Club",
       "Claude Builder Club",
