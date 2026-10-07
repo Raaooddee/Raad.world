@@ -32,15 +32,15 @@ export const experience: ExperienceEntry[] = [
     ],
   },
   {
-    title: "IT Support Assistant (Institute on Aging)",
+    title: "Endpoint Systems Administrator",
     org: "UW School of Medicine and Public Health",
     location: "Madison, WI",
     period: "February 2026 – Present",
     logo: "/logos/wisc.png",
     bullets: [
-      "Support researchers and staff at the UW–Madison Institute on Aging (SMPH) by triaging and troubleshooting Windows/macOS issues across computers and peripherals, and documenting resolutions.",
-      "Contribute to ongoing website accessibility and UX improvements using web best practices (semantic HTML, alt text, metadata) and performance-minded updates.",
-      "Collaborate with the team to keep day-to-day systems and workflows running smoothly.",
+      "Triage and resolve ~20 Windows/macOS, network, and account tickets per week for 50+ researchers and staff; document 15+ repeat fixes in a shared knowledge base the rest of the team now works from.",
+      "Image and provision endpoints, administer accounts and group access in Active Directory, configure VPN and network access, and keep machines current through patching and backups.",
+      "Improve site accessibility and page performance with semantic HTML, alt text, and asset cleanup.",
     ],
   },
   {
